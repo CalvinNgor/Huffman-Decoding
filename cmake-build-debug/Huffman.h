@@ -6,27 +6,47 @@
 #define HUFFMAN_DECOMP_HUFFMAN_H
 #include <iostream>
 #include <string>
+#include <list>
 
 using namespace std;
 
 class Huffman
 {
 private:
-    int alphaSize;
-    string lettre;
+    char letter;
     int freq;
+    Huffman *left;
+    Huffman *right;
+    Huffman *top;
 
 public:
     Huffman();
-    Huffman(int a);
-    Huffman(int a, string l);
-    Huffman(int a, string l, int f);
+    Huffman(char l);
+    Huffman(char l, int f);
 
+    // Step 1
+    char getLetter();
+    int getFreq();
+    const int getLeft();
+    const int getRight();
     int getAlphaSize();
-    void getAlpha();
+    string getAlpha();
+    //friend istream& operator >> (istream& flux, Huffman& H);
+    //friend ostream& operator << (ostream&, Huffman& H);
 
-    friend istream& operator >> (istream& flux, Huffman& H);
-    friend ostream& operator << (ostream&, Huffman& H);
+    // Step 2
+
+    void createTree(int size);
+    void createStorage(Huffman* n, string s);
+
+    Huffman *getTop() const;
+
+    // Step 3
+
+
+    // Step 4
+
+
 };
 
 

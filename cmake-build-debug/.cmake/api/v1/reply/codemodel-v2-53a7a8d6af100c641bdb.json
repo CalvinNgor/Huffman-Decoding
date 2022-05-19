@@ -58,8 +58,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Polytech cours/PROJ631/HUFFMAN DECOMP/cmake-build-debug",
-		"source" : "C:/Polytech cours/PROJ631/HUFFMAN DECOMP"
+		"build" : "C:/Polytech cours/PROJ631/Huffman-Decoding/cmake-build-debug",
+		"source" : "C:/Polytech cours/PROJ631/Huffman-Decoding"
 	},
 	"version" : 
 	{

@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Polytech cours/PROJ631/HUFFMAN DECOMP/cmake-build-debug"
+			"value" : "c:/Polytech cours/PROJ631/Huffman-Decoding/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -623,7 +623,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Polytech cours/PROJ631/HUFFMAN DECOMP"
+			"value" : "C:/Polytech cours/PROJ631/Huffman-Decoding"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -663,7 +663,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/ninja/win/ninja.exe"
+			"value" : "C:/Program Files/JetBrains/CLion 2022.1/bin/ninja/win/ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1239,7 +1239,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Polytech cours/PROJ631/HUFFMAN DECOMP/cmake-build-debug"
+			"value" : "C:/Polytech cours/PROJ631/Huffman-Decoding/cmake-build-debug"
 		},
 		{
 			"name" : "HUFFMAN_DECOMP_IS_TOP_LEVEL",
@@ -1263,7 +1263,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Polytech cours/PROJ631/HUFFMAN DECOMP"
+			"value" : "C:/Polytech cours/PROJ631/Huffman-Decoding"
 		}
 	],
 	"kind" : "cache",
