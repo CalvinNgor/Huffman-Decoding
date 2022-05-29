@@ -1,8 +1,7 @@
 //
-// Created by calvi on 19/05/2022.
+// Created by calvin on 19/05/2022.
 //
 
-#include "Fin.h"
 #include "Node.h"
 #include <bits/stdc++.h>
 #include <iostream>
@@ -41,7 +40,7 @@ void storeCode(Node* root, string str)
         return;
     if (root->getLetter() != '$')
         code[root->getLetter()]=str;
-    cout << "ROOT : " << root->getLetter()<< ' ' << root->getLetter() << ' ' << root->getFreq() << ' ' << root->getRight() << ' ' << root->getLeft() << ' ' << root<< endl;
+    //cout << "ROOT : " << root->getLetter()<< ' ' << root->getLetter() << ' ' << root->getFreq() << ' ' << root->getRight() << ' ' << root->getLeft() << ' ' << root<< endl;
     storeCode(root->getLeft(), str + "0");
     storeCode(root->getRight(), str + "1");
 }
@@ -76,7 +75,7 @@ void Huffman()
         temp = new Node('$', left->getFreq() + right->getFreq());
         temp->setLeft(left);
         temp->setRight(right);
-        cout << "TEMP : " << temp->getLetter()<< ' ' << temp->getLetter() << ' ' << temp->getFreq() << ' ' << temp->getRight() << ' ' << temp->getLeft() << ' ' << temp << endl;
+        //cout << "TEMP : " << temp->getLetter()<< ' ' << temp->getLetter() << ' ' << temp->getFreq() << ' ' << temp->getRight() << ' ' << temp->getLeft() << ' ' << temp << endl;
 
         //cout << "LEFT :" << temp->getLeft() << endl;
         //cout << "RIGHT :" << temp->getRight() << endl;
@@ -109,13 +108,14 @@ string decode(Node* root, const string& str)
 
 int main() {
 
-    ifstream MyReadFile("truc.txt");
+    ifstream MyReadFile("exemple_freq.txt");
     string str;
+    string smg;
     int index = 0;
     char letter = '\0';
     int frequency = 0;
     getline(MyReadFile, str);
-    string truc = "opengenus";
+    string truc = "bonjour!!";
 
     while (getline(MyReadFile, str)) {
         index = str.find(' ');
@@ -124,6 +124,7 @@ int main() {
         frequencies[letter] = frequency;
         //cout << "STR :" << str << endl;
     }
+
 
     MyReadFile.close();
     string s1, s2;
@@ -137,15 +138,15 @@ int main() {
         it++;
     }
 
-    for (char &i: truc) {
+    for (char &i: smg) {
         s1 = s1 + code[i];
         //cout << "S1 : " << s1 << endl;
         //cout << "CODE :" << code[i] << endl;
     }
 
-    cout << "Encoded Huffman data:" << s1 << endl;
+    cout << "Encoded Huffman:" << s1 << endl;
 
     s2 = decode(pq.top(), s1);
-    cout << "Decoded Huffman Data:" << s2 << endl;
+    cout << "Decoded Huffman:" << s2 << endl;
     return 0;
 }
