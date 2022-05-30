@@ -17,3 +17,6 @@ the text.
 
 This project is separed in 3 parts. I use Huffman.cpp to code and decode the string, Node.h is the declaration of the node class, and then Node.cpp is the definition of the methods from Node.h.
 
+How does my code work ?
+Firstly, go to Huffman.cpp, scroll down and then in the function "main" replace the file by the name of the file that you want to use to decode with the alphabet.
+And then, you change the string that you decide to code. 
